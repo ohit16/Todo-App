@@ -1,0 +1,238 @@
+body {
+    text-align: center;
+    background-color: #F0ECE5;
+}
+
+#outerContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2em;
+
+}
+
+#container {
+    background-color: white;
+    height: 100%;
+    width: 50em;
+    border: 2px solid black;
+    border-radius: 15px;
+    position: relative;
+
+}
+
+h1 {
+    text-decoration: wavy underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.delete {
+    background-color: #161A30;
+    color: white;
+    position: absolute;
+    right: 1em;
+}
+
+.done {
+    background-color: #B6BBC4;
+    color: black;
+    margin-left: 8em;
+    margin-right: 1em;
+    position: absolute;
+    right: 4em;
+}
+
+.delete,
+.done,
+#addbtn {
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: large;
+    border: 2px solid black;
+
+}
+
+#addbtn {
+    background-color: #31304D;
+    color: white;
+    border: 2px solid black;
+}
+
+#task {
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #F0ECE5;
+    color: black;
+    font-size: larger;
+    border: 2px solid black;
+}
+
+#task::placeholder {
+    color: black;
+}
+
+button:hover {
+    transition: all 0.8s ease;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.todo {
+    font-size: 1.9em;
+    list-style-type: decimal;
+    margin-right: 17em;
+    margin-top: 0.9em;
+}
+
+#todos {
+    border-top: 2px solid black;
+    margin-top: 1em;
+    margin-bottom: 10em;
+}
+
+#ex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ex {
+    list-style-type: none;
+}
+
+#btns {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.both {
+    width: 30.4em;
+    height: 2.4em;
+    border-top: 2px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+#alldone {
+    background-color: #B6BBC4;
+    color: black;
+    font-size: large;
+    border-bottom-left-radius: 8.5px;
+}
+
+#alldelete {
+    background-color: #161A30;
+    color: white;
+    font-size: large;
+    border-bottom-right-radius: 8.5px;
+}
+
+@media(max-width:830px) {
+    #container {
+        width: 50em;
+    }
+
+    body {
+        font-size: small;
+    }
+
+    #task {
+        width: 8em;
+        height: 1.5em;
+    }
+
+    .delete,
+    .done,
+    #addbtn {
+        height: 1.8em;
+        width: 4em;
+    }
+}
+
+@media(max-width:680px) {
+    #container {
+        width: 35em;
+    }
+
+    body {
+        font-size: smaller;
+    }
+
+    #task {
+        width: 7em;
+        height: 1.8em;
+    }
+
+    .delete,
+    .done,
+    #addbtn {
+        height: 1.5em;
+        width: 3.5em;
+    }
+
+    #ex {
+        padding-left: 70px;
+    }
+
+}
+
+@media(max-width:500px) {
+    #container {
+        width: 25em;
+    }
+
+    body {
+        font-size: smaller;
+    }
+
+    #task {
+        width: 7em;
+        height: 1.8em;
+    }
+
+    .delete,
+    .done,
+    #addbtn {
+        height: 1.5em;
+        width: 3.5em;
+    }
+
+    #ex {
+        padding-left: 200px;
+    }
+}
+
+@media(max-width:340px) {
+    #container {
+        width: 25em;
+    }
+
+    body {
+        font-size: x-small;
+
+    }
+
+    #task {
+        width: 7em;
+        height: 1.8em;
+        font-size: 15px;
+    }
+
+    .delete,
+    .done,
+    #addbtn {
+        height: 1.5em;
+        width: 3.5em;
+        font-size: 17px;
+
+    }
+
+    #ex {
+        padding-left: 200px;
+    }
+}
